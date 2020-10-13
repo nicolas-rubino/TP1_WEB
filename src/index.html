@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>TP1</title>
+</head>
+
+<body>
+
+    <div class="wrapper container">
+        <div class="row">
+            <nav id="sidebar"
+                class="navbar navbar-expand-lg bg-dark col-xl-2 col-lg-2 col-md-12 col-sm-12 nav-pills fixed-top">
+                <button type="button" class="btn bg-warning btn-lg btn-block text-dark py-2 my-2 navbar-toggler"
+                    data-toggle="collapse" data-target="#nav"><span class="navbar-toggler-icon">MENU</span></button>
+                <div id="nav" class="collapse navbar-collapse">
+                    <ul class="navbar-nav flex-column">
+                        <div class="text-white text-center">
+                            <h3>TP-01 inc.</h3>
+                            <hr class="my-2 bg-white">
+                            <img src="mz.jpg" class="rounded-circle mt-3" alt="#">
+                            <h5 class="py-5" id="user">John Doe</h5>
+                            <hr class="my-2 bg-white">
+                        </div>
+                        <li class="nav-item ">
+                            <a class="nav-link text-white btn-outline-danger pl-2" href="#">
+                                <span class="fas fa-home" data-feather="home"></span>
+                                Tableau de bord <span class="sr-only"></span>
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link text-white btn-outline-danger pl-2" href="#">
+                                <span class="fas fa-user" data-feather="file"></span>
+                                Profile
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link text-white btn-outline-danger pl-2" href="#">
+                                <span class="fas fa-tools" data-feather="shopping-cart"></span>
+                                Configuration
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link text-white btn-outline-danger pl-2" href="#">
+                                <span class="fas fa-inbox" data-feather="users"></span>
+                                Inbox
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link text-white btn-outline-danger pl-2" href="#">
+                                <span class="fas fa-table" data-feather="bar-chart-2"></span>
+                                Tableaux
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link text-white btn-outline-danger pl-2" href="#">
+                                <span class="fas fa-shopping-cart" data-feather="layers"></span>
+                                Ventes
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link text-white btn-outline-danger pl-2" href="#">
+                                <span class="fas fa-chart-line" data-feather="layers"></span>
+                                Statistiques
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link text-white btn-outline-danger pl-2" href="#">
+                                <span class="fas fa-chart-bar" data-feather="layers"></span>
+                                Graphes
+                            </a>
+                        </li>
+                        <li class="nav-item last-nav-item ">
+                            <a class="nav-link text-white btn-outline-danger pl-2" href="#">
+                                <span class="fas fa-file-alt" data-feather="layers"></span>
+                                Documentation
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <section>
+        <div class="container-fluid ">
+            <div class="col-lg-12 col-md-12" style="padding-left:17vw;">
+                <div class="row" style="padding-top:85px;">
+                    <div class="col-xl-3 col-lg-5 col-md-5 col-sm-6 col-10">
+                        <div class="card mb-3 shadow-lg rounded">
+                            <div class="row no-gutters">
+                                <span class="fas fa-shopping-cart fa-4x pl-4 mt-4 text-warning" data-feather="layers"
+                                    style="position: absolute;"></span>
+                                <div class="card-body">
+                                    <h4 class="card-title text-muted text-right">Ventes</h4>
+                                    <h3 class="text-muted text-right">150,000$</h3>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">Updated now</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-5 col-md-5 col-sm-6 col-10">
+                        <div class="card mb-3 shadow-lg rounded">
+                            <div class="row no-gutters">
+                                <span class="fas fa-money-bill-alt fa-4x ml-3 mt-4 text-success" data-feather="layers"
+                                    style="position: absolute;"></span>
+                                <div class="card-body">
+                                    <h4 class="card-title text-muted text-right">Dépenses</h4>
+                                    <h3 class="text-muted text-right">48,000$</h3>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">Updated now</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-5 col-md-5 col-sm-6 col-10">
+                        <div class="card mb-3 shadow-lg rounded">
+                            <div class="row no-gutters">
+                                <span class="fas fa-users fa-4x ml-3 mt-4 text-primary" data-feather="layers"
+                                    style="position: absolute;"></span>
+                                <div class="card-body">
+                                    <h4 class="card-title text-muted text-right">Clients</h4>
+                                    <h3 class="text-muted text-right">120,000</h3>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">Updated now</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-5 col-md-5 col-sm-6 col-10">
+                        <div class="card mb-3 shadow-lg rounded">
+                            <div class="row no-gutters">
+                                <span class="fas fa-chart-line fa-4x ml-3 mt-4 text-danger" data-feather="layers"
+                                    style="position: absolute;"></span>
+                                <div class="card-body">
+                                    <h4 class="card-title text-muted text-right">Visiteurs</h4>
+                                    <h3 class="text-muted text-right">73,000</h3>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">Updated now</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="container-fluid" style="padding-left: 18vw; padding-bottom: 50px; padding-top: 20px;">
+        <div class="row">
+            <div class="col-lg-6 col-md-10 col-sm-10 ">
+                <h3 class="text-center font-weight-bold font-italic">Staff Salary</h3>
+                <table class="table table-striped bg-light text-center">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Nom</th>
+                            <th scope="col">Date</th>
+                            <th scope="col">Salaire</th>
+                            <th scope="col">Message</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Pascal</td>
+                            <td>5300$</td>
+                            <td>25/09/2020</td>
+                            <td><button type="button" class="btn btn-info btn-sm btn-block">Message</button></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Pascal</td>
+                            <td>5300$</td>
+                            <td>25/09/2020</td>
+                            <td><button type="button" class="btn btn-info btn-sm btn-block">Message</button></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Pascal</td>
+                            <td>5300$</td>
+                            <td>25/09/2020</td>
+                            <td><button type="button" class="btn btn-info btn-sm btn-block">Message</button></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Pascal</td>
+                            <td>5300$</td>
+                            <td>25/09/2020</td>
+                            <td><button type="button" class="btn btn-info btn-sm btn-block">Message</button></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Pascal</td>
+                            <td>5300$</td>
+                            <td>25/09/2020</td>
+                            <td><button type="button" class="btn btn-info btn-sm btn-block">Message</button></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Pascal</td>
+                            <td>5300$</td>
+                            <td>25/09/2020</td>
+                            <td><button type="button" class="btn btn-info btn-sm btn-block">Message</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <ul class="pagination justify-content-center">
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-6 col-md-10 col-sm-10 ">
+                <h3 class="text-center font-weight-bold font-italic">Recent Payments</h3>
+                <table class="table table-hover table-dark text-center">
+                    <thead class="text-light">
+                        <tr class="text-secondary">
+                            <th scope="col">#</th>
+                            <th scope="col">Nom</th>
+                            <th scope="col">Date</th>
+                            <th scope="col">Salaire</th>
+                            <th scope="col">Message</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-white">
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Pascal</td>
+                            <td>5300$</td>
+                            <td>25/09/2020</td>
+                            <td><button type="button" class="btn btn-success btn-sm btn-block">Approuved</button></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Pascal</td>
+                            <td>5300$</td>
+                            <td>25/09/2020</td>
+                            <td><button type="button" class="btn btn-success btn-sm btn-block">Approuved</button></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Pascal</td>
+                            <td>5300$</td>
+                            <td>25/09/2020</td>
+                            <td><button type="button" class="btn btn-danger btn-sm btn-block">Waiting</button></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Pascal</td>
+                            <td>5300$</td>
+                            <td>25/09/2020</td>
+                            <td><button type="button" class="btn btn-danger btn-sm btn-block">Waiting</button></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Pascal</td>
+                            <td>5300$</td>
+                            <td>25/09/2020</td>
+                            <td><button type="button" class="btn btn-success btn-sm btn-block">Approuved</button></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Pascal</td>
+                            <td>5300$</td>
+                            <td>25/09/2020</td>
+                            <td><button type="button" class="btn btn-danger btn-sm btn-block">Waiting</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <ul class="pagination justify-content-center">
+                    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class=" col-lg-7 col-md-7 col-sm-10"
+                style="padding-left: 18vw; padding-top: 4vw;">
+                <div class="bg-dark text-white p-4 rounded">
+                    <h4 class="mb-5"> Sondage Language De Programmation</h4>
+                    <h6 class="mb-3"> JAVA-J2EE</h6>
+                    <div class="progress mb-4" style="height:20px">
+                        <div class="progress-bar progress-bar-striped font-weight-bold" style="width:95%">
+                            95%
+                        </div>
+                    </div>
+
+                    <h6 class="mb-3"> ANGULAR 10</h6>
+                    <div class="progress mb-4" style="height:20px">
+                        <div class="progress-bar progress-bar-striped font-weight-bold bg-success" style="width:85%">
+                            85%
+                        </div>
+                    </div>
+
+                    <h6 class="mb-3">REACT</h6>
+                    <div class="progress mb-4" style="height:20px">
+                        <div class="progress-bar progress-bar-striped font-weight-bold bg-danger" style="width:70%">
+                            70%
+                        </div>
+                    </div>
+
+                    <h6 class="mb-3">PHP</h6>
+                    <div class="progress mb-4" style="height:20px">
+                        <div class="progress-bar progress-bar-striped font-weight-bold bg-info" style="width:13%">
+                            95%
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-10 ml-4">
+                <h3 class="font-weight-bold font-italic text-center">Tasks : </h3>
+                <div class="toast ml-5"data-autohide=false style="min-width: 30vw;">
+                    <div class="toast-header">
+                        <strong class="mr-auto">Task #</strong>
+                        <button type="button" class="btn btn-lg text-success fas fa-edit">
+                        </button>
+                        <button type="button" class="btn btn-lg text-danger fas fa-dumpster" data-dismiss="toast">
+                        </button>
+                    </div>
+                    <div class="toast-body">
+                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quisquam incidunt eaque
+                            adipisci quam, quas aut ratione veniam corrupti dignissimos!</p>
+                    </div>
+                </div>
+                <div class="toast ml-5" data-autohide=false style="min-width: 30vw;">
+                    <div class="toast-header">
+                        <strong class="mr-auto">Task #</strong>
+                        <button type="button" class="btn btn-lg text-success fas fa-edit">
+                        </button>
+                        <button type="button" class="btn btn-lg text-danger fas fa-dumpster" data-dismiss="toast">
+                        </button>
+                    </div>
+                    <div class="toast-body">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quisquam incidunt eaque
+                            adipisci quam, quas aut ratione veniam corrupti dignissimos!</p>
+                    </div>
+                </div>
+                <div class="toast ml-5" data-autohide=false style="min-width: 30vw;">
+                    <div class="toast-header">
+                        <strong class="mr-auto">Task #</strong>
+                        <button type="button" class="btn btn-lg text-success fas fa-edit">
+                        </button>
+                        <button type="button" class="btn btn-lg text-danger fas fa-dumpster" data-dismiss="toast">
+                        </button>
+                    </div>
+                    <div class="toast-body">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quisquam incidunt eaque
+                            adipisci quam, quas aut ratione veniam corrupti dignissimos!</p>
+                    </div>
+                </div>
+                <div class="toast ml-5" data-autohide=false style="min-width: 30vw;">
+                    <div class="toast-header">
+                        <strong class="mr-auto">Task #</strong>
+                        <button type="button" class="btn btn-lg text-success fas fa-edit">
+                        </button>
+                        <button type="button" class="btn btn-lg text-danger fas fa-dumpster" data-dismiss="toast">
+                        </button>
+                    </div>
+                    <div class="toast-body">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse illum qui
+                             molestiae inventore beatae labore autem architecto iure officiis blanditiis.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer container-fluid">
+            <div style="padding-left: 17vw;">
+                <hr>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="text-center">
+                            <ul class="list-inline ">
+                                <li class="list-inline-item mr-2 "><a class="text-muted" href="#">TP01-420-345-AL</a>
+                                </li>
+                                <li class="list-inline-item mr-2"><a class="text-muted" href="#">About</a></li>
+                                <li class="list-inline-item mr-2"><a class="text-muted" href="#">Support</a></li>
+                                <li class="list-inline-item mr-2"><a class="text-muted" href="#">Blog</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <h6>@ 2020 Copyright. Made With <span class="fas fa-heart text-danger"></span> by <b
+                                class="text-success">JD</b></h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

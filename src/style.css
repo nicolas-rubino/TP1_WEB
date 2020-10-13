@@ -1,0 +1,33 @@
+nav{
+    min-width: 150px;
+}
+.nav-item{
+    font-size:1vmin;
+    font-size: 1.3vmax;
+    padding-top: 0.2vmin;
+    padding-top: 0.6vmax;
+}
+
+.last-nav-item{
+    margin-bottom: 200%;
+}
+
+.nav-link{
+    font-size: 110%;
+}
+.card{
+    min-width: 240px;
+    max-width: 350px; 
+}
+.rounded-circle{
+    height: 100px;
+    width: 100px;
+    float: left;
+}
+
+.footer{
+    background-color: gainsboro;
+}
+body{
+    background-color: gainsboro;
+}
